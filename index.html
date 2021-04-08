@@ -42,7 +42,7 @@
 
         function getWeather(country)
         {
-            fetch('http://api.openweathermap.org/data/2.5/weather?q='+country+'&appid=908cd4c869394c5676a63ac704fb78d4')
+            fetch('https://api.openweathermap.org/data/2.5/weather?q='+country+'&appid=908cd4c869394c5676a63ac704fb78d4')
             .then(response => response.json()).
             then(commits => alert(commits.main.temp));
         }
