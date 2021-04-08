@@ -11,7 +11,7 @@
     <style>
         .container
         {
-            background-color: cadetblue;
+            background-image:linear-gradient(to right,burlywood,gray);
         }
     </style>
     
@@ -35,7 +35,7 @@
                     var capital = commits[i].capital;
                     var region = commits[i].region;
                     var countryCode = commits[i].alpha2Code;
-                    document.getElementById('card').innerHTML += '<div class="col-4"><div class="card" style="width: 18rem; background-image:linear-gradient(to right,burlywood,gray);color:white"><label class="card-text" style = "text-align:center;" >'+country+'</label><img class="card-img-top" src="'+flagURL+'" alt="Card image cap"><div class="card-body"><p class="card-text">Capital: '+capital+'</p><p class="card-text">Region: '+region+'</p><p class="card-text">Country Code: '+countryCode+'</p><a class="btn btn-primary" onclick=getWeather("'+capital+'")>Get Weather</a></div></div></div>';
+                    document.getElementById('card').innerHTML += '<div class="col-4"><div class="card" style="width:18rem;background-image:linear-gradient(to right,burlywood,gray);color:white"><label class="card-text" style = "text-align:center;" >'+country+'</label><img class="card-img-top" src="'+flagURL+'" alt="Card image cap" style ="height:152px;"><div class="card-body"><p class="card-text">Capital: '+capital+'</p><p class="card-text">Region: '+region+'</p><p class="card-text">Country Code: '+countryCode+'</p><a class="btn btn-primary" onclick=getWeather("'+capital+'")>Get Weather</a></div></div></div>';
                 }
             });
         }
